@@ -1,0 +1,37 @@
+setElementsPosition() {
+
+       this.bgImg.position(-10,-5);
+       this.tittle.position(0,0);
+       this.line2.position(windowWidth/8-187,-275)
+       this.line.position(windowWidth/4+10,-15);
+       // this.input.position(width / 2 - 110, height / 2 - 80);
+       this.playButton.position(40,200);
+       this.accountButton.position(40,325);
+       this.settingButton.position(40,450);
+       this.shopButton .position(40,575);
+       this.info.position(width -(width*7.5/18), height / 1 - 60);
+      }
+    
+    setElementsStyle() {
+        this.bgImg.class("gameBG");
+        this.tittle.class("tittle")
+        this.line2.class("bottom");
+        this.line.class("rotate");
+        //this.input.class("customInput");
+        this.playButton.class("customButton");
+        this.settingButton.class("customButton")
+        this.accountButton.class("customButton");
+        this.shopButton.class("customButton"); 
+        this.info.class("greeting");
+      }
+
+
+      /* if(isEditClicked == true){
+          this.doneNaming.position(width+100,165)
+          this.doneNaming.class("editCheckBDisapper")
+        }else{
+          this.doneNaming.position(width-150,165)
+          this.doneNaming.class("editCheckBDisapper")
+        }*/
+    
+    

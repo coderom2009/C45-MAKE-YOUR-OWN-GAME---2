@@ -1,0 +1,425 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: vollkorn;
+  src: url(./FugazOne-Regular.ttf);
+}
+@font-face {
+  font-family: concert;
+  src: url(./ConcertOne-Regular.ttf);
+}
+
+canvas {
+  display: block;
+}
+.tittle{
+  width: 425px;;
+  height: 130px;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+
+}
+
+.whatn{
+  width: 65px;;
+  height: 100px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+  cursor: pointer;
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  font-family: vollkorn;
+  text-align: center;
+  border-color: #000000;
+  background-color: #ebff33;
+}
+
+.profileImgS{
+  width: 75px;;
+  height: 75px;
+  border-radius: 15px;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+  cursor: pointer;
+}
+
+
+.profileImg{
+  width: 150px;;
+  height: 150px;
+  border-radius: 15px;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+}
+
+.gameBG{
+  width: 101.5%;
+  height: 101.5%;
+  filter: blur(6.5px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  border-radius: 0px;
+
+}
+
+.gameBGplaying{
+  width: 101.5%;
+  height: 101.5%;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  border-radius: 0px;
+
+}
+.bottom{
+  transform: rotate(90deg);
+  height: 115%;
+  width: 15px;
+  border: 5px solid rgb(255, 255, 255);
+  outline-color: rgb(255, 255, 255);
+}
+.rotate{
+  transform: rotate(4deg);
+  height: 115%;
+  border: 5px solid rgb(255, 255, 255);
+  outline-color: rgb(255, 255, 255);
+}
+
+
+
+.gameTitleAfterEffect{
+  width: 25%;
+  height: 80px;
+}
+
+.greeting{
+  font-size: 25px;
+  color: white;
+  font-family: vollkorn;
+  text-align: center;
+  background: linear-gradient(to left, #fa529b, #fccc52 100%);
+  background-position: 0 100%;
+  background-size: 100% 6px;
+  background-repeat: repeat-x;
+  cursor: default;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.loading{
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  font-family: vollkorn;
+  text-align: center;
+  cursor: default;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.instruc{
+  font-size: 20px;
+  color: white;
+  font-family: vollkorn;
+  text-align: center;
+  background: linear-gradient(to left, #fea63400, #fea63400 100%);
+  background-position: 0 100%;
+  background-size: 100% 2px;
+  background-repeat: repeat-y;
+  cursor: default;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.name{
+  font-size: 50px;
+  color: white;
+  font-family: vollkorn;
+  text-align: center;
+  background: linear-gradient(to left, #fa529b, #fccc52 100%);
+  background-position: 0 100%;
+  background-size: 100% 8px;
+  background-repeat: repeat-x;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+  cursor: default;
+
+}
+.accElem{
+  font-size: 35px;
+  color: rgb(255, 208, 0);
+  font-family: vollkorn;
+  text-align: center;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+  cursor: default;
+}
+
+.accElemDis{
+  font-size: 35px;
+  color: rgba(255, 208, 0, 0);
+  font-family: vollkorn;
+  text-align: center;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+  cursor: default;
+}
+
+.editCheckB{
+  width:60px;
+  height:60px;
+  background-color: #ffffff;
+  border: 3px solid rgb(0, 0, 0);
+  color: #FFFF;
+  font-weight:bold;
+  border-radius: 10px;
+  margin-bottom:100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  font-family: vollkorn;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+  outline: none;
+}
+
+.editCheckBDisapper{
+  width:60px;
+  height:60px;
+  background-color: #ffffff00;
+  border: 3px solid rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0);
+  font-weight:bold;
+  border-radius: 10px;
+  margin-bottom:100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  font-family: vollkorn;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+  outline: none;
+}
+
+.nameDis{
+  font-size: 0px;
+  color: white;
+  font-family: vollkorn;
+  text-align: center;
+  background: linear-gradient(to left, #fa529b, #fccc52 100%);
+  background-position: 0 100%;
+  background-size: 100% 8px;
+  background-repeat: repeat-x;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+}
+.tittleText{
+  font-size: 90px;
+  color: rgb(255, 255, 255);
+  font-family: concert;
+  text-align: center;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+  cursor: default;
+
+}
+.tag{
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  font-family: concert;
+  text-align: center;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+  cursor: default;
+
+  
+}
+
+.tittleTextDis{
+  font-size: 90px;
+  color: rgba(255, 255, 255, 0);
+  font-family: concert;
+  text-align: center;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+  cursor: default;
+
+}
+.tagDis{
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0);
+  font-family: concert;
+  text-align: center;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.3s;
+  cursor: default;
+  
+}
+
+.customInput {
+  width:600px;
+  height:70px;
+  border: 6px solid white;
+  border-radius: 15px;
+  padding: 5px;
+  background-color:transparent;
+  font-size: 65px;
+  outline:none;
+  color:rgb(255, 255, 255);
+  font-family: concert;
+  text-align: center;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 0.5; /* Firefox */
+}
+
+.customButton {
+  width:275px;
+  height:70px;
+  background-color: #fea834;
+  border: 3px solid white;
+  color: #FFFF;
+  font-weight:bold;
+  border-radius: 10px;
+  margin-bottom:100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  font-family: vollkorn;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+  outline: none;
+}
+
+.roundButton {
+  width:575px;
+  height:95px;
+  background-color: #fea834;
+  border: 6px solid white;
+  color: #FFFF;
+  font-weight:bold;
+  border-radius: 25px;
+  margin-bottom:100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 55px;
+  font-family: vollkorn;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+  outline: none;
+}
+
+.smallButton {
+  width:275px;
+  height:80px;
+  background-color: #fea834;
+  border: 6px solid white;
+  color: #FFFF;
+  font-weight:bold;
+  border-radius: 25px;
+  margin-bottom:100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 34px;
+  font-family: vollkorn;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+  outline: none;
+}
+
+.roundDisapper {
+  width:57px;
+  height:9px;
+  background-color: #fea63400;
+  border: 6px solid rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0);
+  font-weight:bold;
+  border-radius: 25px;
+  margin-bottom:100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0px;
+  font-family: vollkorn;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.5s;
+  outline: none;
+}
+
+.smallDisapper {
+  width:275px;
+  height:80px;
+  background-color: #fea63400;
+  border: 6px solid rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0);
+  font-weight:bold;
+  border-radius: 25px;
+  margin-bottom:100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0px;
+  font-family: vollkorn;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.5s;
+  outline: none;
+}
+
+.resetButton {
+  width:60px;
+  height:60px;
+  background-image: url('./assets/reset.png');
+  background-size: cover;
+  border-radius: 30px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  outline: none;
+}
+
+.resetText{
+  font-size: 25px;
+  color: white;
+  font-family: vollkorn;
+  text-align: center;
+  text-shadow: -1px 1px 0 #ff1744,
+                1px 1px 0 #ff1744,
+                1px -1px 0 #ff1744,
+                -1px -1px 0 #ff1744;
+}
+
+.leadersText{
+  font-size: 20px;
+  color: white;
+  font-family: vollkorn;
+  text-align: center;
+}

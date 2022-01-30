@@ -1,0 +1,13 @@
+1. Created navigation.js
+    Navigation.js will contain all html elements,image,butttons.
+        Navigation.js is having a display function for displaying diffent htmls when it should be required.
+        Navigation.js is having a toggleing function which toggle the current screen [welcome,play,account...] 
+
+add:-
+
+    1.when the icon of profile photo is click it should change the current screen to account. //done
+    2.replacing emojis with images (html.image) //done
+    3.adding a help button beside each button, and also adding dialog box in bottom. //later
+    4.adding of a dev log section, displaing what is in th enew update. //done
+    5.in setting, adding sound levels and platform color chooser.      //done
+    6.shop, adding power-ups,profile image emojis //done
